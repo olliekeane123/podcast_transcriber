@@ -1,0 +1,16 @@
+# Podcast Settings
+rss_url: "https://anchor.fm/s/fd1fcb44/podcast/rss"
+max_episodes: 
+
+# Storage Paths
+paths:
+  data_root: "data"
+  raw_subfolder: "raw"
+  processed_subfolder: "processed"
+  raw_audio_subfolder: "raw_audio"
+  manifest_subfolder: "manifests"
+  wav_audio_subfolder: "wav_audio"
+  transcripts_subfolder: "transcripts"
+  diarizations_subfolder: "diarizations"
+  aligned_scripts_subfolder: "aligned_scripts"
+
