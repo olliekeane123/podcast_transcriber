@@ -1,4 +1,3 @@
-
 import requests
 from requests import HTTPError
 from bs4 import BeautifulSoup
@@ -106,11 +105,11 @@ def get_ep_descripton(xml: BeautifulSoup, title: str):
 def get_ep_audio_url(xml: BeautifulSoup, title: str):
     enclosure = xml.find("enclosure")
 
-    if not enclosure and enclosure.has_attr("url"):
+    if enclosure and enclosure.has_attr("url"):
+        return enclosure["url"]
+    else:
         logger.error(f"Could not find audio URL for episode: {title}")
         return None
-        
-    return enclosure["url"]
     
 
 ### Extract audio data from url ###

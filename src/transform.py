@@ -1,9 +1,7 @@
 import subprocess
-
 import torch
 import torchaudio
 from faster_whisper import WhisperModel
-
 from pyannote.audio import Pipeline
 from pyannote.audio.pipelines.utils.hook import ProgressHook
 
